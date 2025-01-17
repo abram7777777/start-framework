@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .icon{
+        @apply flex items-center p-2.5 text-white border-2 rounded-full
+    }
+    .star-after{
+        @apply after:content-[''] after:w-20 after:h-1 after:absolute after:top-1/2 after:left-10
+    }
+    .star-before{
+        @apply before:content-[''] before:w-20 before:h-1 before:absolute  before:top-1/2 before:right-10
+    }
+}
